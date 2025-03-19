@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__text">
+          <h1>Formulario entregado </h1>
+          <p>Compruebe que la informacion resibida es correcta</p>
+        </div>
+      </header>
+    <main>
+        {% block content %}
+        <h1>Gracias por rellenar el formulario</h1>
+        <p>Nombre: {{name}}</p>
+        <p>E-mail: {{email}}</p>
+        <p>Dirección: {{address}}</p>
+        <p>Fecha: {{date}}</p>
+        {% endblock %}    
+    </main> 
+</body>
+</html>
